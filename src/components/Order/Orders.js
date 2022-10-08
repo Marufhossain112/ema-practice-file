@@ -6,7 +6,7 @@ import ReviewItem from "../ReviewItem/ReviewItem";
 const Orders = () => {
   const { products, inititalCart } = useLoaderData();
   const [cart, setCart] = useState(inititalCart);
-
+// hello this is 
   const clearCart = () => {
     setCart([]);
     removeFromDb();
