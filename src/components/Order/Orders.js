@@ -6,7 +6,7 @@ import ReviewItem from "../ReviewItem/ReviewItem";
 const Orders = () => {
   const { products, inititalCart } = useLoaderData();
   const [cart, setCart] = useState(inititalCart);
-// hello this is  another
+  // hello this is  another
   const clearCart = () => {
     setCart([]);
     removeFromDb();
@@ -36,7 +36,9 @@ const Orders = () => {
         )}
       </div>
       <div className="cart-container">
-        <Cart cart={cart} clearCart={clearCart}></Cart>
+        <Cart cart={cart} clearCart={clearCart}>
+       
+        </Cart>
       </div>
     </div>
   );
